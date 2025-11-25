@@ -13,7 +13,7 @@ const USERNAME = process.env.USERNAME || 'admin';
 const PASSWORD = process.env.PASSWORD || 'admin';
 const API_URL = process.env.API_URL || 'https://sublink.eooce.com'; // 订阅转换地址
 const PORT = process.env.SERVER_PORT || process.env.PORT || 3000;
-const SUB_TOKEN = process.env.SUB_TOKEN || generateRandomString();
+const SUB_TOKEN = process.env.SUB_TOKEN || '1f6653ad-00f0-4794-add1-e2429ed276e2';
 
 let CFIP = process.env.CFIP || "time.is";
 let CFPORT = process.env.CFPORT || "443";
@@ -932,3 +932,4 @@ async function startServer() {
 }
 
 startServer();
+
